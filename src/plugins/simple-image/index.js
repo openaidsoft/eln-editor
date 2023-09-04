@@ -1,3 +1,11 @@
+/**
+ * Simple image plugin
+ * @date 2023. 9. 4. - 오후 11:49:52
+ *
+ * @export
+ * @class SimpleImage
+ * @typedef {SimpleImage}
+ */
 export default class SimpleImage {
   static get toolbox() {
     return {

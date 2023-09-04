@@ -2,6 +2,12 @@ import { createRouter, createWebHistory } from 'vue-router'
 import InitAppView from '@/views/init/App.vue'
 import HomeView from '@/views/init/HomeView.vue'
 
+/**
+ * Description placeholder
+ * @date 2023. 9. 5. - 오전 12:16:45
+ *
+ * @type {*}
+ */
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
