@@ -33,7 +33,8 @@ export default class Paragraph {
    * @class
    */
   static get DEFAULT_PLACEHOLDER() {
-    return '';
+    // return '';
+    return `명령어는 '/' 입력`;
   }
 
   /**
@@ -78,6 +79,14 @@ export default class Paragraph {
    * @param {KeyboardEvent} e - key up event
    */
   onKeyUp(e) {
+    if (e.code === 'Slash') {
+      console.log(`'/' pressed`)
+      console.log('this.api:', this.api)
+      // handleTabPress()
+      // this.api.toolbar.open()
+      this.api.tooltip.show()
+    }
+
     if (e.code !== 'Backspace' && e.code !== 'Delete') {
       return;
     }
