@@ -1,8 +1,15 @@
 import EditorJS from '@editorjs/editorjs'
 import Header from '@editorjs/header'
 import List from '@editorjs/list'
-import SimpleImage from '@/plugins/simple-image'
+import NestedList from '@editorjs/nested-list'
+// import SimpleImage from '@/plugins/simple-image'
+import SimpleImage from '@editorjs/simple-image'
+console.log('SimpleImage:', SimpleImage)
 import Paragraph from '@/plugins/paragraph'
+import ImageTool from '@editorjs/image'
+import Table from '@editorjs/table'
+import LinkTool from '@editorjs/link'
+import CodeTool from '@editorjs/code'
 
 
 const isSlash = (event) => '/' === event.detail?.target.holder.innerText
@@ -53,8 +60,33 @@ const init = (opt = {}) => {
     tools: { 
       paragraph: Paragraph,
       header: Header, 
-      list: List,
+      // list: List,
+      // list: NestedList,
+      list: {
+        class: NestedList,
+        inlineToolbar: true,
+        config: {
+          defaultStyle: 'unordered'
+        },
+      },
+      table: Table,
+      linkTool: LinkTool,
+      code: CodeTool,
       image: SimpleImage, 
+      // image: {
+      //   class: SimpleImage,
+      //   inlineToolbar: true
+      //   // inlineToolbar: ['link'],
+      // },
+      // image: {
+      //   class: ImageTool,
+      //   config: {
+      //     endpoints: {
+      //       byFile: 'http://localhost:8008/uploadFile', // Your backend file uploader endpoint
+      //       byUrl: 'http://localhost:8008/fetchUrl', // Your endpoint that provides uploading by Url
+      //     }
+      //   }
+      // },
     }, 
     onChange: (api, event) => isSlash(event) && handleSlash(api, event),
   }
