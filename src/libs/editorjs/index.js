@@ -10,6 +10,10 @@ import ImageTool from '@editorjs/image'
 import Table from '@editorjs/table'
 import LinkTool from '@editorjs/link'
 import CodeTool from '@editorjs/code'
+// import EJLaTeX from 'editorjs-latex'
+import EJLaTeX from '@/../node_modules/editorjs-latex/src/index.js'
+
+import '@/../node_modules/editorjs-latex/src/style.css'
 
 
 const isSlash = (event) => '/' === event.detail?.target.holder.innerText
@@ -87,6 +91,13 @@ const init = (opt = {}) => {
       //     }
       //   }
       // },
+      Math: {
+        class: EJLaTeX,
+        shortcut: 'CMD+SHIFT+M',
+        // config: {
+        //     css: '.math-input-wrapper { padding: 5px; }'
+        // }
+      },
     }, 
     onChange: (api, event) => isSlash(event) && handleSlash(api, event),
   }
