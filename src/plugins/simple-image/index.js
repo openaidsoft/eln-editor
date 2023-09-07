@@ -6,6 +6,8 @@
  * @class SimpleImage
  * @typedef {SimpleImage}
  */
+import './index.css'
+
 export default class SimpleImage {
   static get toolbox() {
     return {
