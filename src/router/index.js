@@ -13,13 +13,17 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('@/views/Home.vue')
+      redirect: '/weditor'
+    },
+    {
+      path: '/editorjs',
+      name: 'editorjs',
+      component: () => import('@/views/Editorjs.vue')
     },
     {
       path: '/weditor',
       name: 'weditor',
-      component: () => import('@/views/WNote.vue')
+      component: () => import('@/views/WEditor.vue')
     },
     {
       path: '/init',

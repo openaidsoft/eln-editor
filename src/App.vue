@@ -6,8 +6,8 @@
 <template>
   <div>
     <ul class="menu">
-      <li><RouterLink to="/" class="">home</RouterLink></li>
       <li><RouterLink to="/weditor" class="">w-editor</RouterLink></li>
+      <li><RouterLink to="/editorjs" class="">editorjs</RouterLink></li>
     </ul>
   </div>
 <router-view></router-view>
