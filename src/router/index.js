@@ -17,6 +17,11 @@ const router = createRouter({
       component: () => import('@/views/Home.vue')
     },
     {
+      path: '/weditor',
+      name: 'weditor',
+      component: () => import('@/views/WNote.vue')
+    },
+    {
       path: '/init',
       name: 'initApp',
       redirect: '/init/home',

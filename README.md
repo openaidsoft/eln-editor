@@ -1,5 +1,15 @@
 # eln-editor
 
+## overview
+- 연구노트 에디터 
+
+## fe.eln 사용 라이브러리
+- `vueperslides` 
+- `vuedraggable`
+
+
+<!-- # eln-editor
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
@@ -32,4 +42,4 @@ npm run build
 
 ```sh
 npm run test:unit
-```
+``` -->
