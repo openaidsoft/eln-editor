@@ -82,19 +82,32 @@
 <script>
 import { watch, provide, ref, reactive, onMounted } from "vue";
 import { useRoute } from "vue-router";
-import wEditorContainer from "@/components/w-editor/w-editor-container.vue";
-import Utils from "@/components/cmm/Utils.js";
-import VariableContent, { basic_block } from "@/Content.js";
-import eitableBlock from "@/components/w-editor/text-editor/editable-block.vue";
-import wOptEditor from "@/components/w-editor/w-editor-addon.vue";
+// import wEditorContainer from "@/components/w-editor/w-editor-container.vue";
+// import Utils from "@/components/cmm/Utils.js";
+// import VariableContent, { basic_block } from "@/Content.js";
+// import eitableBlock from "@/components/w-editor/text-editor/editable-block.vue";
+// import wOptEditor from "@/components/w-editor/w-editor-addon.vue";
+// import draggable from "vuedraggable";
+// import EditorOption from "@/components/w-editor/text-editor/block-functions.vue";
+// import Comment from "@/components/comment/commentView.vue";
+// import EachComment from "@/components/comment/eachCommentView.vue";
+// import WeditorTag from "@/components/w-editor/w-editor-tag.vue";
+// import Emoji from "@/components/cmm/Emoji.vue";
+// import { getNoteService, getNoteCmmtService, saveBlockService } from "@/components/w-editor/w-editor-service.js";
+// import { blockStore } from "@/store/blockStore.js";
+import wEditorContainer from "@/weditor/components/w-editor/w-editor-container.vue";
+import Utils from "@/weditor/components/cmm/Utils.js";
+import VariableContent, { basic_block } from "@/weditor/Content.js";
+import eitableBlock from "@/weditor/components/w-editor/text-editor/editable-block.vue";
+import wOptEditor from "@/weditor/components/w-editor/w-editor-addon.vue";
 import draggable from "vuedraggable";
-import EditorOption from "@/components/w-editor/text-editor/block-functions.vue";
-import Comment from "@/components/comment/commentView.vue";
-import EachComment from "@/components/comment/eachCommentView.vue";
-import WeditorTag from "@/components/w-editor/w-editor-tag.vue";
-import Emoji from "@/components/cmm/Emoji.vue";
-import { getNoteService, getNoteCmmtService, saveBlockService } from "@/components/w-editor/w-editor-service.js";
-import { blockStore } from "@/store/blockStore.js";
+import EditorOption from "@/weditor/components/w-editor/text-editor/block-functions.vue";
+import Comment from "@/weditor/components/comment/commentView.vue";
+import EachComment from "@/weditor/components/comment/eachCommentView.vue";
+import WeditorTag from "@/weditor/components/w-editor/w-editor-tag.vue";
+import Emoji from "@/weditor/components/cmm/Emoji.vue";
+import { getNoteService, getNoteCmmtService, saveBlockService } from "@/weditor/components/w-editor/w-editor-service.js";
+import { blockStore } from "@/weditor/store/blockStore.js";
 
 function showIcons(id, i) {
   const iconBox = document.getElementsByClassName("icons");

@@ -1,4 +1,5 @@
-import Utils from "@/components/cmm/Utils.js";
+// import Utils from "@/components/cmm/Utils.js";
+import Utils from "@/weditor/components/cmm/Utils.js";
 const uid = new Utils();
 
 export default {

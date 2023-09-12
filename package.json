@@ -10,6 +10,7 @@
     "test:unit": "vitest"
   },
   "dependencies": {
+    "click-outside-vue3": "^4.0.1",
     "@editorjs/code": "^2.8.0",
     "@editorjs/editorjs": "^2.28.0",
     "@editorjs/header": "^2.7.0",
@@ -20,15 +21,21 @@
     "@editorjs/simple-image": "^1.5.1",
     "@editorjs/table": "^2.2.2",
     "editorjs-latex": "^1.0.4",
+    "jsme-editor": "^2021.7.13",
+    "mathlive": "^0.69.11",
     "pinia": "^2.1.6",
     "vue": "^3.3.4",
-    "vue-router": "^4.2.4"
+    "vue-router": "^4.2.4",
+    "vue3-emoji-picker": "^1.1.1",
+    "vuedraggable": "^4.1.0",
+    "vueperslides": "^3.3.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.3.1",
     "@vue/test-utils": "^2.4.1",
     "jsdoc": "^4.0.2",
     "jsdom": "^22.1.0",
+    "sass": "^1.66.1",
     "vite": "^4.4.9",
     "vitest": "^0.34.2"
   }

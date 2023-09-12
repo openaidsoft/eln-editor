@@ -18,9 +18,12 @@
 </template>
 
 <script>
-import CommentInput from "@/components/comment/commentInput.vue";
-import Utils from "@/components/cmm/Utils.js";
-import VariableContent from "@/Content.js";
+// import CommentInput from "@/components/comment/commentInput.vue";
+// import Utils from "@/components/cmm/Utils.js";
+// import VariableContent from "@/Content.js";
+import CommentInput from "@/weditor/components/comment/commentInput.vue";
+import Utils from "@/weditor/components/cmm/Utils.js";
+import VariableContent from "@/weditor/Content.js";
 
 export default {
   name: "commentView",

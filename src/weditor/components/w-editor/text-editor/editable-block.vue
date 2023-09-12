@@ -20,9 +20,12 @@
 
 <script>
 import { watch, ref } from "vue";
-import Content from "@/Content.js";
-import TagMenu from "@/components/w-editor/w-editor-addon-menu.vue";
-import EditorOption from "@/components/w-editor/text-editor/block-functions.vue";
+// import Content from "@/Content.js";
+// import TagMenu from "@/components/w-editor/w-editor-addon-menu.vue";
+// import EditorOption from "@/components/w-editor/text-editor/block-functions.vue";
+import Content from "@/weditor/Content.js";
+import TagMenu from "@/weditor/components/w-editor/w-editor-addon-menu.vue";
+import EditorOption from "@/weditor/components/w-editor/text-editor/block-functions.vue";
 
 function getCur(el) {
   var bl = document.getElementsByClassName("block");

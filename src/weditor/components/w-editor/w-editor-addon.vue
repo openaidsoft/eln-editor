@@ -9,11 +9,16 @@
 </template>
 
 <script>
-import Jsme from "@/components/jsme/jsme.vue";
-import JExcel from "@/components/excel/jexcel.vue";
-import Formula from "@/components/formula/formula.vue";
-import ImageUpload from "@/components/cmm/ImageUpload.vue";
-import Content from "@/Content.js";
+import Jsme from "@/weditor/components/jsme/jsme.vue";
+import JExcel from "@/weditor/components/excel/jexcel.vue";
+import Formula from "@/weditor/components/formula/formula.vue";
+import ImageUpload from "@/weditor/components/cmm/ImageUpload.vue";
+import Content from "@/weditor/Content.js";
+// import Jsme from "@/components/jsme/jsme.vue";
+// import JExcel from "@/components/excel/jexcel.vue";
+// import Formula from "@/components/formula/formula.vue";
+// import ImageUpload from "@/components/cmm/ImageUpload.vue";
+// import Content from "@/Content.js";
 
 export default {
   name: "w-editor-addon",

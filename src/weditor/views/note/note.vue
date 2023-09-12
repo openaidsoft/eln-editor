@@ -9,10 +9,14 @@
 <script>
 import { watch, ref } from "vue";
 import { useRoute } from "vue-router";
-import WEditorOption from "@/components/w-editor/note-option.vue";
-import TemplateLayer from "@/components/w-editor/template-list.vue";
-import ScreenSizeLayout from "@/components/cmm/screen-size-layout.vue";
-import WEditor from "@/components/w-editor/w-editor.vue";
+import WEditorOption from "@/weditor/components/w-editor/note-option.vue";
+import TemplateLayer from "@/weditor/components/w-editor/template-list.vue";
+import ScreenSizeLayout from "@/weditor/components/cmm/screen-size-layout.vue";
+import WEditor from "@/weditor/components/w-editor/w-editor.vue";
+// import WEditorOption from "@/components/w-editor/note-option.vue";
+// import TemplateLayer from "@/components/w-editor/template-list.vue";
+// import ScreenSizeLayout from "@/components/cmm/screen-size-layout.vue";
+// import WEditor from "@/components/w-editor/w-editor.vue";
 
 export default {
   name: "Note",
@@ -40,9 +44,11 @@ export default {
     watch(
       () => route.params,
       (to, pre) => {
-        note_uid.value = to.id;
+        // note_uid.value = to.id;
+        note_uid.value = 1;
         if (pre !== undefined) {
-          pre_note_uid.value = pre.id;
+          // pre_note_uid.value = pre.id;
+          pre_note_uid.value = 0;
         }
       },
       {

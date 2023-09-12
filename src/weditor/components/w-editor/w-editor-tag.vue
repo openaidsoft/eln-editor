@@ -19,8 +19,10 @@
 </template>
 
 <script>
-import Modal from "@/components/cmm/Modal.vue";
-import Tag from "@/components/cmm/Tag.vue";
+// import Modal from "@/components/cmm/Modal.vue";
+// import Tag from "@/components/cmm/Tag.vue";
+import Modal from "@/weditor/components/cmm/Modal.vue";
+import Tag from "@/weditor/components/cmm/Tag.vue";
 
 export default {
   name: "w-editor-tag.vue",

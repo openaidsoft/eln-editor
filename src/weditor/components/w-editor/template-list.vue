@@ -41,7 +41,8 @@
 </template>
 
 <script>
-import Modal from "@/components/cmm/Modal.vue";
+import Modal from "@/weditor/components/cmm/Modal.vue";
+// import Modal from "@/components/cmm/Modal.vue";
 import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";
 

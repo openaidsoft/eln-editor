@@ -26,6 +26,11 @@ const router = createRouter({
       component: () => import('@/views/WEditor.vue')
     },
     {
+      path: '/note/:id',
+      name: 'Note',
+      component: () => import('@/weditor/views/note/note.vue')
+    },
+    {
       path: '/init',
       name: 'initApp',
       redirect: '/init/home',
