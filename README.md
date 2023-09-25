@@ -3,10 +3,9 @@
 ## overview
 - 연구노트 에디터 
 
-## fe.eln 사용 라이브러리
-- `vueperslides` 
-- `vuedraggable`
-
+## info
+- 노션 관련 문서
+  - `notion-docs`
 
 <!-- # eln-editor
 
